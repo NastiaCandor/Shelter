@@ -1,0 +1,120 @@
+.pets-our-friends {
+  background: $color-backgroung-gray;
+  .our-friends__title{
+    padding: 80px 0 0 0;
+    @include media-tablet-600 {
+      padding-top: 41px;
+    }
+  }
+  .animal__name {
+    padding-top: 29px;
+  }
+}
+
+._pets-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  .animal__slider {
+    padding: 60px 0 25px 0;
+    @include media-small-laptop-950 {
+      padding: 29px 64px 6px 64px;
+    }
+    @include media-small-laptop-768 {
+      padding: 29px 0 6px 0;
+      width: 580px;
+    }
+    @include media-tablet-600 {
+      padding-top: 42px;
+      width: 270px;
+    }
+    
+    
+  }
+  .button_round {
+    margin: 0 10px;
+    @include media-tablet-600 {
+      margin: 0 5px;
+    }
+  }
+  ._start, ._end {
+    padding: 0 13px;
+  }
+  ._number {
+    border: 2px solid $color-primary-hover;
+    background-color: $color-primary-hover;
+    cursor: default;
+  }
+  ._disabled {
+    border: 2px solid $color-title-light;
+    color: $color-title-light;
+    background: none;
+    cursor: default;
+  }
+  .animal__grid {
+    @include media-laptop {
+      row-gap: 28px;
+      justify-content: space-evenly;
+    }
+    &._prev-slide {
+      position: absolute;
+      right: 104%;
+      padding: 60px 0 25px 0;
+      width: 100%;
+      @include media-small-laptop-950 {
+        padding: 29px 64px 6px 64px;
+      }
+      @include media-small-laptop-768 {
+        padding: 29px 0 6px 0;
+        width: 580px;
+      }
+      @include media-tablet-600 {
+        padding-top: 42px;
+        width: 270px;
+      }
+    }
+    &._next-slide {
+      position: absolute;
+      left: 104%;
+      padding: 60px 0 25px 0;
+      width: 100%;
+      @include media-small-laptop-950 {
+        padding: 29px 64px 6px 64px;
+      }
+      @include media-small-laptop-768 {
+        padding: 29px 0 6px 0;
+        width: 580px;
+      }
+      @include media-tablet-600 {
+        padding-top: 42px;
+        width: 270px;
+      }
+    }
+  }
+  @include media-laptop {
+    .animal__content:nth-child(7),.animal__content:nth-child(8) {
+      display: none;
+    }
+  }
+  @include media-tablet-600 {
+    .animal__content:nth-child(4),.animal__content:nth-child(5),.animal__content:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+
+.buttons-slider {
+  display: flex;
+  margin-bottom: 98px;
+  @include media-small-laptop-950 {
+    margin-bottom: 76px;
+  }
+  @include media-tablet-600 {
+    margin-bottom: 45px;
+  }
+}
+
+.pets__slider__wrapper {
+  overflow: hidden;
+}

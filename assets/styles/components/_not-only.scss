@@ -1,0 +1,70 @@
+.not-only {
+  background: url(../../assets/images/noise_transparent@2x.png), $color-not-only-grad;
+}
+
+.not-only__background {
+  background-image: url(../../assets/images/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: calc(100% - 502px);
+  padding-top: 90px;
+  @include media-small-laptop-1190 {
+    background-size: calc(100% - 139px);
+  }
+  @include media-tablet-520 {
+    background-size: calc(100% - 40px);
+  }
+}
+
+.not-only__content {
+  max-width: 460px;
+  padding: 253px 0 257px 0;
+  padding: calc(100% - 947px) 0 calc(100% - 943px) 0;
+  width: calc(100% - 740px);
+  @include media-small-laptop-1190 {
+    max-width: 90vw;
+    width: 60vw;
+    padding: 60px 0 90vw 0;
+    margin: 0 auto;
+  }
+  @include media-tablet-520 {
+    width: 317px;
+    padding-bottom: 117.9vw;
+  }
+  @include media-tablet-400 {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.not-only__title {
+  color: $color-text-light;
+  margin-bottom: 42px;
+  @include media-tablet-400 {
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
+
+.not-only__text {
+  color: $color-title-light;
+  font-size: 1.5rem;
+  line-height: 160%;
+  margin-bottom: 57px;
+  @include media-small-laptop-1190 {
+    margin-bottom: 42px;
+  }
+  @include media-tablet-400 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 41px;
+  }
+}
+
+.not-only__button {
+  @include media-small-laptop-1190 {
+    display: flex;
+    justify-content: center;
+  }
+}

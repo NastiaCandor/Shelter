@@ -1,0 +1,44 @@
+%hunburger-line {
+  display: inline-block;
+  background: $color-primary;
+  height: 2px;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  content: '';
+  &._white {
+    background: #000;
+  }
+}
+
+.hamburger {
+  display: inline-block;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  z-index: 20;
+  transition: all 0.9s ease 0s;
+  @include media-tablet {
+    display: block;
+  }
+  &::before {
+    @extend %hunburger-line;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    @extend %hunburger-line;
+    bottom: 0;
+    left: 0;
+  }
+  &._active {
+    transform: rotate(90deg) ;
+}
+}
+
+.humburget__line {
+  @extend %hunburger-line;
+  height: 2.5px;
+  top: calc(50% - 1.5px);
+}

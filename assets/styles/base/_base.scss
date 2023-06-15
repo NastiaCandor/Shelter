@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* to remove blue highlight while touching */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  @extend %font-add-Georgia;
+  &._lock{
+    overflow: hidden;
+  }
+}
+
+h1 {
+  @include font(3.2rem,110%);
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  @include font(4.4rem,130%);
+  @include media-tablet-400 {
+    @include font(2.5rem,130%);
+  }
+}
+
+h3 {
+  @include font(3.5rem,130%);
+  @include media-tablet-400 {
+    @include font(2.5rem,130%);
+  }
+}
+
+h4 {
+  @include font(2rem,115%);
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  @include font(1.5rem,110%);
+}
+
+p {
+  @extend %font-add-Arial;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+

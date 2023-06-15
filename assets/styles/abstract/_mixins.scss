@@ -1,0 +1,64 @@
+@mixin font ($size, $height, $weight: 400, $style: normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+// 1289px width
+@mixin media-laptop {
+  @media (max-width: $laptop-width) { @content; }
+}
+
+@mixin media-small-laptop-1200 {
+  @media (max-width: $laptop-small-1200-width) { @content; }
+}
+
+@mixin media-small-laptop-1190 {
+  @media (max-width: $laptop-small-1190-width) { @content; }
+}
+
+@mixin media-small-laptop-1080 {
+  @media (max-width: $laptop-small-1080-width) { @content; }
+}
+
+@mixin media-small-laptop-950 {
+  @media (max-width: $laptop-small-950-width) { @content; }
+}
+
+@mixin media-small-laptop-768 {
+  @media (max-width: $laptop-small-768-width) { @content; }
+}
+
+// 767px
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-tablet-740 {
+  @media (max-width: $tablet-740-width) { @content; }
+}
+
+@mixin media-tablet-690 {
+  @media (max-width: $tablet-690-width) { @content; }
+}
+
+@mixin media-tablet-600 {
+  @media (max-width: $tablet-600-width) { @content; }
+}
+
+@mixin media-tablet-580 {
+  @media (max-width: $tablet-580-width) { @content; }
+}
+
+@mixin media-tablet-520 {
+  @media (max-width: $tablet-520-width) { @content; }
+}
+
+@mixin media-tablet-400 {
+  @media (max-width: $tablet-400-width) { @content; }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) { @content; }
+}

@@ -1,0 +1,72 @@
+.button {
+  height: 52px;
+  color: $color-button;
+  padding: 16px 45px;
+  border-radius: 100px;
+  @include font(1.7rem,130%);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  @extend %transition;
+  &_filled {
+    background-color: $color-primary;
+    &:active {
+      background-color: $color-primary-hover;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-primary-hover;
+      }
+    }
+    
+  }
+  &_bordered {
+    border: 2px solid $color-primary;
+    background: none;
+    &:active {
+      border: 2px solid $color-primary-hover;
+      background-color: $color-primary-hover;
+    }
+    @media (hover: hover) {
+      &:hover {
+        border: 2px solid $color-primary-hover;
+        background-color: $color-primary-hover;
+      }
+    }
+  }
+  &_round {
+    background: none;
+    padding: 0 18px;
+    border: 2px solid $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %font-add-Georgia;
+    &:active {
+      border: 2px solid $color-primary-hover;
+      background-color: $color-primary-hover;
+    }
+    @media (hover: hover) {
+      &:hover {
+        border: 2px solid $color-primary-hover;
+        background-color: $color-primary-hover;
+      }
+    }
+  }
+  &_card {
+    background: $color-primary;
+    color: $color-title-dark;
+    border-radius: 9px;
+    padding: 10px 15px;
+    &:active{
+      background-color: $color-primary-hover;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-primary-hover;
+      }
+    }
+    @include media-tablet-400 {
+      padding: 13px 14px;
+    }
+  }
+}

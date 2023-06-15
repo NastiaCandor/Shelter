@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/styles/style.css">
+  <link type="image/png" sizes="16x16" rel="icon" href="../../assets/icons/icons8-dog-collar-16.png">
+  <title>Pets</title>
+</head>
+<body>
+  <header class="header _white">
+    <div class="wrapper header__wrapper _white">
+      <div class="header__logo _white">
+        <a href="../../pages/main/index.html" class="logo _white">
+          <h1 class="logo__title">Cozy House</h1>
+          <p class="logo__subtitle _white">Shelter for pets in Boston</p>
+        </a>
+      </div>
+      <div class="menu__bg">
+        <nav class="header__navigation _white">
+          <ul class="navigation _white">
+            <li class="navigation__item  _white"><a href="../../pages/main/index.html" class="navigation__link  _white">About the shelter</a></li>
+            <li class="navigation__item  active _white"><a href="#" class="navigation__link active  _white">Our pets</a></li>
+            <li class="navigation__item _white"><a href="../../pages/main/index.html#help" class="navigation__link  _white">Help the shelter</a></li>
+            <li class="navigation__item  _white"><a href="#footer" class="navigation__link  _white">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>      
+
+      <span class="hamburger _white">
+        <span class="humburget__line _white">
+            
+        </span>
+      </span>
+    </div>
+  </header>
+  <section class="pets-our-friends" id="our-friends">
+    <div class="wrapper our-friends__wrapper">
+      <h3 class="our-friends__title">Our friends who<br>are looking for a house</h3>
+      <div class="slider__wrapper _pets-page">
+        <div class="pets__slider__wrapper">
+          <div class="animal__slider _pets-page-slider">
+            <div class="animal__grid _pets-page _prev-slide" id="grid-prev">
+            </div>
+            <div class="animal__grid _pets-page _curr-slide" id="grid-curr">
+            </div>
+            <div class="animal__grid _pets-page _next-slide" id="grid-next">
+            </div>
+          </div>
+        </div>
+        <div class="buttons-slider">
+          <button class="button button_round _start" id="btn-start">
+            &lt;&lt;
+          </button>
+          <button class="button button_round _left" id="btn-prev">
+            &lt;
+          </button>
+          <button class="button button_round _number" id="btn-number">1
+          </button>
+          <button class="button button_round _rigth" id="btn-next">
+            >
+          </button>
+          <button class="button button_round _end" id="btn-end">
+            >>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__contacts">
+          <h3 class="footer__title">For questions and suggestions</h3>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a href="mailto:email@shelter.com" class="contact__link">
+                <div class="contact__link__icon">
+                  <object data="../../assets/icons/mail.svg" type="image/svg+xml" class="contact__link__icon_obj">Your browser does not support SVG<img src="../../assets/icons/mail.svg" alt=""></object>
+                </div>
+                <h4 class="contact__link__text">email@shelter.com</h4>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="tel:+136745677554" class="contact__link">
+                <div class="contact__link__icon">
+                  <object data="../../assets/icons/phone.svg" type="image/svg+xml" class="contact__link__icon_obj"></object>                   
+                </div>
+                <h4 class="contact__link__text">+13 674 567 75 54</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__locations">
+          <h3 class="footer__title">We are waiting for your visit</h3>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a href="https://www.google.com/maps/search/1+Central+Street,+Boston/@42.3646555,-71.1312057,12z" target="_blank" class="contact__link">
+                <div class="contact__link__icon">
+                  <object data="../../assets/icons/pin.svg" type="image/svg+xml" class="contact__link__icon_obj"></object>                    
+                </div>
+                <h4 class="contact__link__text">1 Central Street, Boston (entrance from the store)</h4>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="https://www.google.com/maps/search/18+South+Park,+London+/@51.4609718,-0.3317457,10z/data=!3m1!4b1" target="_blank" class="contact__link">
+                <div class="contact__link__icon">
+                  <object data="../../assets/icons/pin.svg" type="image/svg+xml" class="contact__link__icon_obj"></object>                 
+                </div>
+                <h4 class="contact__link__text">18 South Park, London </h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="../../assets/js/pets-page.js"></script>
+  <script src="../../assets/js/humburger.js"></script>
+  <script src="../../assets/js/modal.js"></script>
+</body>
+</html>

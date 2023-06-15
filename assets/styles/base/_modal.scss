@@ -1,0 +1,150 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-backgroung-modal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  background-color: $color-text-header;
+  border-radius: 9px;
+  width: 900px;
+  height: 500px;
+  z-index: 3;
+  @include media-small-laptop-1080 {
+    width: 630px;
+    height: 350px;
+  }
+  @include media-tablet {
+    width: 240px;
+    height: 341px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: -52px;
+  right: -43.5px;
+  cursor: pointer;
+  svg {
+    pointer-events: none;
+  }
+  @include media-tablet {
+    right: -30px;
+  }
+}
+
+.pet-modal__content {
+  display: inline-flex;
+  width: 100%;
+}
+
+.pet-modal__img {
+  width: 55.5%;
+  height: 100%;
+  border-radius: 9px 0px 0px 9px;
+  @include media-small-laptop-1080 {
+    width: 350px;
+    height: 350px;
+  }
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.pet-modal__info {
+  width: 44.5%;
+  padding: 50px 20px 88px 29px;
+  overflow: scroll;
+  @include media-small-laptop-1080 {
+    padding: 0;
+    margin: 10px 8px 10px 11px;
+    height: 340px;
+    overflow: scroll;
+  }
+  @include media-tablet {
+    width: 100%;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    height: 321px;
+  }
+}
+
+.pet-modal__name {
+  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+  @include media-tablet {
+    font-size: 3.5rem;
+  }
+}
+
+.pet-modal__description {
+  margin: 40px 0;
+  letter-spacing: 0.06em;
+  @include media-small-laptop-1080 {
+    margin: 20px 0 17px 0;
+    font-size: 1.3rem;
+  }
+  @include media-tablet {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+
+.pet-modal__list {
+  list-style: none;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media-small-laptop-1080 {
+    height: 85px;
+  }
+  @include media-tablet {
+    text-align: left;
+  }
+}
+
+.pet-modal__list-item {
+  letter-spacing: 0.06em;
+  font-size: 1.5rem;
+  &::before {
+    content: '';
+    display: inline-block;
+    margin: 4px 10px 4px 0;
+    background: $color-primary;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+  }
+}
+
+.pet-modal__span {
+  font-weight: 700;
+}
+
+@keyframes modal-open {
+  from {scale: 0;}
+  to {scale: 1;}
+}
+.modal-open {
+  animation-name: modal-open;
+  animation-duration: 0.5s;
+}
+
+@keyframes modal-close {
+  from {scale: 1;}
+  to {scale: 0;}
+}
+.modal-close {
+  animation-name: modal-close;
+  animation-duration: 0.5s;
+}

@@ -1,0 +1,131 @@
+.footer {
+  background: url(../../assets/images/noise_transparent@2x.png), $color-not-only-grad;
+}
+
+.footer__wrapper {
+  background-image: url(../../assets/images/footer-puppy.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @include media-small-laptop-1190 {
+    background-position: 50% 100%;
+  }
+  @include media-tablet-400 {
+    background-size: 260px;
+  }
+}
+
+.footer__content {
+  padding: 56px 0 37px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 740px;
+  justify-content: space-between;
+  @include media-small-laptop-1190 {
+    padding: 30px 10px 352px 10px;
+    margin: 0 auto;
+    // max-width: 100%;
+    justify-content: space-around;
+  }
+  @include media-tablet-400 {
+    padding: 30px 0 284px 0;
+  }
+}
+
+.footer {
+  &__contacts {
+    width: 278px;
+    @include media-tablet-400 {
+      width: 100%;
+    }
+  }
+  &__locations {
+    width: 302px
+  }
+  &__title {
+    color: $color-text-light;
+    letter-spacing: 0.059em;
+    margin-bottom: 20px;
+    @include media-tablet-400 {
+      text-align: center;
+    }
+    
+  }
+}
+
+.contact {
+  &__list {
+    list-style: none;
+    
+  }
+  &__item {
+    padding: 20px 0;
+    cursor: pointer;
+    // @extend %transition;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    position: relative;
+    z-index: 1;
+    @include media-tablet-400 {
+      justify-content: center;
+    }
+    @extend %transition;
+    &__text {
+      letter-spacing: 0.06em;
+    }
+    &__icon {
+      padding-right: 20px;
+      &_obj {
+        position: relative;
+        z-index: -1;
+        @extend %transition;
+      }
+    }
+    &:active {
+      color: $color-text-header;
+      .contact__link__icon_obj {
+        filter: brightness(204%);
+        fill: $color-text-header;
+      }
+    }
+    @media (hover: hover) {
+      &:hover {
+        color: $color-text-header;
+        .contact__link__icon_obj {
+          filter: brightness(204%);
+          fill: $color-text-header;
+        }
+      }
+    }
+  }
+}
+
+.footer-icon {
+  fill: $color-primary ;
+}
+
+.footer__locations {
+  .contact__item {
+    padding: 13px 0;
+    &:nth-child(2) {
+      padding: 20px 0;
+      @include media-tablet-400 {
+        padding: 24px 0;
+      }
+      .contact__link {
+        justify-content: normal;
+      }
+    }
+  }
+  @include media-tablet-400 {
+    margin-top: 17px;
+    .footer__title {
+      width: 270px;
+      margin: 0 auto;
+      margin-bottom: 26px;
+    }
+  }
+  
+}
