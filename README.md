@@ -8,7 +8,7 @@
 - бесконечный слайдер-карусель на странице `main`
 - пагинация на странице `pets`  
 
-Деплой доступен по [сыылке.](https://nastiacandor.github.io/Shelter/pages/main/)  
+Деплой доступен по [ссылке.](https://nastiacandor.github.io/Shelter/pages/main/)  
 Используемый стек: JS, Sass, HTML5.
 
 Задание от [RS School.](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/shelter/shelter.md)
